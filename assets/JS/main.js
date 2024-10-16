@@ -14,7 +14,7 @@ const submit = document.querySelector('.botao')
 info.style = "display:none"
 
 const fetchAPI = async (local) =>{
-    const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=44a794bf71e8413a842221417241510&q=${local}&aqi=no&lang=pt`)
+    const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=44a794bf71e8413a842221417241510&q=${local}&aqi=no&lang=pt`)
     const data = await response.json()
     return data
 }
