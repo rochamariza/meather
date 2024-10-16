@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+:root{
+    --dark-blue: rgb(34, 33, 104);
+    --darkest-blue: rgb(22, 21, 66);
+    --yellow-sun: #fed402;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Quicksand", sans-serif;
+    background-color: var(--dark-blue);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--yellow-sun);
+}
+.container{
+    background-color: var(--dark-blue);
+    border-radius: 30px;
+    border: 4px solid;
+    border-color: var(--yellow-sun);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    box-shadow: 10px 10px 30px #060055;
+}
+.container h1{
+    text-align: center;
+    
+}
+.container h2{
+    margin-bottom: 30px;
+    opacity: 75%;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+.form{
+    margin-block: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form input[type="search"]{
+    text-align: center;
+    outline: none;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+.form input[type="submit"]{
+    text-align: center;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    font-weight: 600;
+    background-color: var(--yellow-sun);
+    border: none;
+    color: var(--dark-blue);
+    border-radius: 40px;
+    --webkit-transition: 0.2s;
+}
+.form input[type="submit"]:hover{
+    background-color: var(--dark-blue);
+    border: 3px solid;
+    border-color: var(--yellow-sun);
+    color: var(--yellow-sun);
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.info .locais{
+    display: flex;
+    align-items: center;
+}
+.info .span{
+    font-size: 20px;
+    font-weight: 600;
+}
+.info span{
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+@media (max-width: 483px) {
+    .container{
+        border: none;
+        box-shadow: none;
+    }
+}
