@@ -95,19 +95,27 @@ body{
     font-weight: 400;
     margin-left: 10px;
 }
-@media (max-width: 483px) {
-    .container{
-        border: none;
-        box-shadow: none;
-    }
-}
 .locais{
     position: relative;
 }
 .lua{
     position: absolute;
     right: 0;
-    left: 80%;
+    left: 270px;
     margin-bottom: 20px;
-    transform: translate(0, -50%);
+    transform: translate(0, -55px);
+}
+
+@media (max-width: 483px) {
+    .container{
+        border: none;
+        box-shadow: none;
+    }
+    .lua{
+        position: absolute;
+        right: 0;
+        left: 100px;
+        margin-bottom: 20px;
+        transform: translate(0, 95px);
+    }
 }
