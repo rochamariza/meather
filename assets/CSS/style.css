@@ -101,3 +101,13 @@ body{
         box-shadow: none;
     }
 }
+.locais{
+    position: relative;
+}
+.lua{
+    position: absolute;
+    right: 0;
+    left: 80%;
+    margin-bottom: 20px;
+    transform: translate(0, -50%);
+}
